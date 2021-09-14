@@ -4,6 +4,7 @@ import styles from './index.less'
 import React, { useEffect } from 'react'
 import Iconfont from '@/components/Iconfont'
 import useModelHelp from '@/hooks/useModelHelp'
+import { typeOf } from '@/utils/utils'
 
 const Home: React.FC = () => {
 
@@ -14,13 +15,14 @@ const Home: React.FC = () => {
     }
 
     useEffect(() => {
+        console.log(typeOf())
     }, [])
 
     return <div className={styles.Home}>
         <Button type="primary" onClick={() => {
             dispatch({
                 type: actions.initData,
-                payload: { }
+                payload: {}
             })
         }}>获取用户</Button>
         &nbsp;&nbsp;&nbsp;
