@@ -4,7 +4,7 @@ import styles from './index.less'
 import React, { useEffect } from 'react'
 import Iconfont from '@/components/Iconfont'
 import useModelHelp from '@/hooks/useModelHelp'
-import { typeOf } from '@/utils/utils'
+import { typeOf, parseParam } from '@/utils/utils'
 
 const Home: React.FC = () => {
 
@@ -15,7 +15,8 @@ const Home: React.FC = () => {
     }
 
     useEffect(() => {
-        console.log(typeOf())
+        console.log(parseParam(window.location.href))
+
     }, [])
 
     return <div className={styles.Home}>
@@ -29,6 +30,9 @@ const Home: React.FC = () => {
         <Iconfont iconName="icon-wode_me" size="20" color="black" />
         &nbsp;
         用户名：{userInfo.name}
+        <div>
+            <img src="" alt="" />
+        </div>
     </div>
 }
 
