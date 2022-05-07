@@ -3,7 +3,7 @@ const reg = /(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(?::\d+)?|(
 
 export const isUrl = (path: string): boolean => reg.test(path);
 
-const HOST = (<any>window).env.bizApi || '';
+const HOST = (window as any).env?.bizApi || '';
 
 export const bizUrl = (url: string): string => `${HOST}${url}`;
 
