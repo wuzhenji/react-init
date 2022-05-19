@@ -1,4 +1,4 @@
-# Ant Design Pro 初始化 by 吴振吉
+# Ant Design Pro 初始化
 
 ## Environment Prepare
 
