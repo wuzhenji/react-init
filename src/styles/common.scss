@@ -44,3 +44,171 @@
   //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.4);
   //background-color: rgba(0,0,0,.01);
 }
+
+.EnterAnimation1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: fadeInTop .2s;
+
+  @keyframes fadeInTop {
+    from {
+      top: auto;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+    }
+    to {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.EnterAnimation2 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: fadeInRight .2s;
+
+  @keyframes fadeInRight {
+    from {
+      top: 0;
+      left: 100%;
+      right: auto;
+      bottom: 0;
+    }
+    to {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.EnterAnimation3 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: fadeInBottom .2s;
+
+  @keyframes fadeInBottom {
+    from {
+      top: 100%;
+      bottom: auto;
+      left: 0;
+      right: 0;
+    }
+    to {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.EnterAnimation4 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: fadeInLeft .2s;
+
+  @keyframes fadeInLeft {
+    from {
+      top: 0;
+      bottom: 0;
+      left: auto;
+      right: 100%;
+    }
+    to {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.LeaveAnimation1 {
+  animation: fadeLeaveTop .2s;
+
+  @keyframes fadeLeaveTop {
+    from {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    to {
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+    }
+  }
+}
+
+.LeaveAnimation2 {
+  animation: fadeLeaveRight .2s;
+
+  @keyframes fadeLeaveRight {
+    from {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    to {
+      top: 0;
+      left: 100%;
+      right: auto;
+      bottom: 0;
+    }
+  }
+}
+
+.LeaveAnimation3 {
+  animation: fadeLeaveBottom .2s;
+
+  @keyframes fadeLeaveBottom {
+    from {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    to {
+      top: 100%;
+      left: 0;
+      right: 0;
+      bottom: auto;
+    }
+  }
+}
+
+.LeaveAnimation4 {
+  animation: fadeLeaveLeft .2s;
+
+  @keyframes fadeLeaveLeft {
+    from {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    to {
+      top: 0;
+      left: auto;
+      right: 100%;
+      bottom: 0;
+    }
+  }
+}

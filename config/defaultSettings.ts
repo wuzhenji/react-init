@@ -12,7 +12,7 @@ const Settings: LayoutSettings & {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: 'wuzhenji',
+  title: 'ANTDPRO',
   pwa: false,
   logo: '/logo.svg',
   iconfontUrl: '',
