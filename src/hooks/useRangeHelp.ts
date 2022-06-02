@@ -17,23 +17,17 @@ const useRangeHelp = (props: IProps): [range: Range | null, position: DOMRectRea
   useEffect(() => {
     if(container && container.current) {
       container.current.onclick = () => {
-        console.log("onclick")
         const selection = document.getSelection()
         setRange(selection?.getRangeAt(0) ?? null)
       }
       container.current.onkeyup = () => {
         const selection = document.getSelection()
-        const newRange = document.createRange()
-        const offset = range?.startOffset || 0
-        console.log(range, offset)
-        newRange.setStart(container.current?.firstChild!, offset)
-        setRange(newRange ?? null)
+        setRange(selection?.getRangeAt(0) ?? null)
       }
     }
   }, [container])
 
   useEffect(() => {
-    console.log("range", range)
     if(range) {
       setPosition(range.getBoundingClientRect())
     } else {
